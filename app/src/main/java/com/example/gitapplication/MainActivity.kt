@@ -20,12 +20,17 @@ class MainActivity : ComponentActivity() {
         setContent {
             GitApplicationTheme {
                 Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
-                    val itemList = arrayOf(1,2,3,4,5,6,7,8,9)
-                    for (i in 0..<itemList.size){
-                        print(i)
-                    }
+                  totalFunction()
                 }
             }
+        }
+    }
+
+    private fun totalFunction() {
+        var total = 0
+        val itemList = arrayOf(1,2,3,4,5,6,7,8,9)
+        for (i in 0..<itemList.size){
+            total +=i
         }
     }
 }
