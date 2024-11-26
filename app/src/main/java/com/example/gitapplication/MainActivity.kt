@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
 
         var total = 0
         val itemList = arrayOf(1,2,3,4,5,6,7,8,9)
-        for (i in 0..<itemList.size){
+        for (i in itemList.indices){
             total +=i
         }
     }
